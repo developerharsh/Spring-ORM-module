@@ -6,6 +6,10 @@
 
   <hibernate-mapping>
   	<class name="mypack.Emp">
-  		<id name="eno"></id>
+  		<id name="eno">
+  			<generator class="assigned"></generator>
+  		</id>
+  		<property name="ename"></property>
+  		<property name="esal"></property>
   	</class>
   </hibernate-mapping>
